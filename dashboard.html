@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img src="images/atco-lab-logo.png" class="logo" alt="Logo">
+            <!-- <div class="my-auto">
+                <p class="date mx-3 text-white d-inline-block mb-0">Date: <span id="date"></span></p>
+                <p class="time text-white d-inline-block mb-0">Time: <span id="time"></span></p>
+            </div> -->
+            <div class="time my-auto">
+                <div class="d-flex text-white fw-normal justify-content-center">
+                    <div class="myClock hour text-center bg-secondary">
+                        <h3 class="h mb-0"></h3>
+                    </div>
+                    <p class="my-auto">:</p>
+                    <div class="myClock minutes text-center bg-secondary">
+                        <h3 class="m mb-0"></h3>
+                    </div>
+                    <p class="my-auto">:</p>
+                    <div class="myClock seconds text-center bg-secondary">
+                        <h3 class="s mb-0"></h3>
+                    </div>
+                    <div class="myClock seconds text-center bg-secondary">
+                        <h3 class="meridiem mb-0"></h3>
+                    </div>
+                </div>
+
+                <div class="dateAndDay text-white d-flex px-3 py-2 bg-secondary">
+                    <h5 class="Day mb-0"></h5>
+                    <h5 class="Date mb-0"></h5>
+                    <h5 class="meridiem mb-0"></h5>
+                </div>
+            </div>
+
+            <div class="text-end my-auto dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <h5 class="avatar-name d-inline-block me-3 text-white mb-0">User</h5>
+                    <img src="images/img_avatar3.png" alt="Avatar" class="avatar-img d-inline-block">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-gear"></i> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-lock"></i> Change Password
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid my-4 px-4">
+        <div class="row mt-3 text-white filter">
+            <div class="col-12 p-0">
+                <h5 class="mb-0 float-start py-1 ps-2">National</h5>
+                <h5 class="mb-0 set-alert float-end py-1 px-2">Set Alert</h5>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-6 px-0">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="bg-gradient-1 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">MTD</p>
+                                    <p class="mb-0">3,500,000</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-gradient-2 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">ACH</p>
+                                    <p class="mb-0">125</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-gradient-3 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">GOLM</p>
+                                    <p class="mb-0">50%</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="bg-gradient-1 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">QTD</p>
+                                    <p class="mb-0">4,500,000</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="bg-gradient-2 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">L.ACH</p>
+                                    <p class="mb-0">200</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="bg-gradient-3 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">L.GOLM</p>
+                                    <p class="mb-0">80%</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="bg-gradient-1 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">YTD</p>
+                                    <p class="mb-0">4,500,000</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="bg-gradient-2 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">L.Y.ACH</p>
+                                    <p class="mb-0">250</p>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-5">
+                                <div class="bg-gradient-3 py-1 px-2 text-white d-flex justify-content-between rounded-1">
+                                    <p class="mb-0">L.Y.GOLM</p>
+                                    <p class="mb-0">95%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-3 px-0 px-lg-2 mt-3 mt-lg-0">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Segments Sale</div>
+                    <div class="card-body py-0 px-1 chart1">
+                        <div id="chart1"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-3 px-0 px-lg-2 mt-3 mt-lg-0">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Product Sale</div>
+                    <div class="card-body py-0 px-1 chart2">
+                        <div id="chart2"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 text-white national">
+            <div class="col-12 col-md-2 col-lg-2 col-xl-1 p-0">
+                <button type="button" class="btn btn-primary custom-btn2 gradient cursor ms-2" data-bs-toggle="modal" data-bs-target="#myModal">Filter <i class="fa-solid fa-plus ps-2"></i></button>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8 col-xl-10 p-0 scrollbar">
+                <button type="button" class="btn btn-primary custom-btn2 gradient3 cursor">Day Wise Sale <i class="fa-solid fa-xmark ps-2"></i></button>
+                <button type="button" class="btn btn-primary custom-btn2 gradient3 cursor ms-2">Month Wise Sale <i class="fa-solid fa-xmark ps-2"></i></button>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2 col-xl-1 p-0 text-end">
+                <button type="button" class="btn btn-primary set-alert ms-2">Set Alert</button>
+            </div>
+                
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 px-0 px-lg-1 ps-lg-0 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Segments Sale</div>
+                    <div class="card-body py-0 px-1 chart3">
+                        <div id="chart3"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-3 px-0 px-lg-1 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Product Sale</div>
+                    <div class="card-body py-0 px-1 chart4">
+                        <div id="chart4"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-3 px-0 px-lg-1 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Doctor Coverage</div>
+                    <div class="card-body py-0 px-1 chart5">
+                        <div id="chart5"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-3 px-0 px-lg-1 pe-xl-0 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Target vs Actual Calls (MTD)</div>
+                    <div class="card-body py-0 px-1 chart6">
+                        <div id="chart6"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-5 px-0 px-lg-1 ps-xl-0 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Day Wise Trend By Value</div>
+                    <div class="card-body py-0 px-1 chart7">
+                        <div id="chart7"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-lg-7 px-0 px-lg-1 pe-xl-0 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Region (Distibutor) Trend by Value</div>
+                    <div class="card-body py-0 px-1 chart8">
+                        <div id="chart8"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-12 mt-4 px-0 mt-3">
+                <div class="card">
+                    <div class="card-header py-0 text-center text-white">Team Trend by Value</div>
+                    <div class="card-body py-0 px-1 chart9">
+                        <div id="chart9"></div>
+                    </div>
+                    <!-- <div class="loader-bg">
+                        <span class="loader"></span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title">Create New Filter</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row mt-2">
+                    <div class="col-lg-6 border-end border-3 border-secondary">
+                        <h4 class="fancy1">Date Filter</h4>
+                        <div class="row align-items-center">
+                            <div class="col-3">
+                                <label for="business_unit" class="col-form-label">Business Unit</label>
+                            </div>
+                            <div class="col-9">
+                                <select for="business_unit" class="form-select business_unit" multiple>
+                                    <option>Select</option>
+                                    <option>Alpha</option>
+                                    <option>Marvel</option>
+                                    <option>Max</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="row align-items-center mt-4">
+                            <div class="col-3">
+                                <label for="zone" class="col-form-label">Zone</label>
+                            </div>
+                            <div class="col-9">
+                                <select for="zone" class="form-select zone" multiple>
+                                    <option>Select</option>
+                                    <option>Lahore</option>
+                                    <option>Peshawar</option>
+                                    <option>Karachi</option>
+                                    <option>Quetta</option>
+                                    <option>Sialkot</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="row align-items-center mt-4">
+                            <div class="col-3">
+                                <label for="segments" class="col-form-label">Segments</label>
+                            </div>
+                            <div class="col-9">
+                                <select for="segments" class="form-select segments" multiple>
+                                    <option>Select</option>
+                                    <option>Wholesale</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="fancy2">Date Filter</h4>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                                    <label class="form-check-label" for="check7">Current Date</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                                    <label class="form-check-label" for="check7">Weekly</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                                    <label class="form-check-label" for="check7">Montly</label>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <div class="col-4">
+                                        <label for="date_start" class="col-form-label">Date Start</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" name="date_start" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mt-3">
+                                    <div class="col-4">
+                                        <label for="date_end" class="col-form-label">Date End</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="date" name="date_end" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-4">
+                                <label for="filter_name" class="col-form-label">Filter Name</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" name="filter_name" class="form-control" id="filter_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h4 class="fancy3">Chart Filter</h4>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="">
+                            <label class="form-check-label" for="check1">Target vs Actual Calls (MTD)</label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="">
+                            <label class="form-check-label" for="check2">Product Wise Sale Value</label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check3" name="option3" value="">
+                            <label class="form-check-label" for="check3">Doctor Coverage</label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check4" name="option4" value="">
+                            <label class="form-check-label" for="check4">Day Wise Trend by Value</label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check5" name="option5" value="">
+                            <label class="form-check-label" for="check5">Monthly Trend by Value</label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check6" name="option6" value="">
+                            <label class="form-check-label" for="check6">Region (Distributor) Trend by Value</label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                            <label class="form-check-label" for="check7">Team Trend by Value</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"><i class="fa-solid fa-eye pe-2"></i> View</button>
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-floppy-disk pe-2"></i> Save Filter</button>
+                <button type="button" class="btn btn-danger"><i class="fa-solid fa-eraser"></i> Clear</button>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery-3.6.4.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/moment/moment.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="vendor/highcharts/highcharts-more.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>

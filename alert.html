@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alert</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Set Alert</h2>
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="email" class="col-form-label">Email</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="email" name="email" class="form-control" id="email">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="mobile" class="col-form-label">Mobile Number</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="tel" name="mobile" class="form-control" id="mobile">
+                        <div class="form-check form-check-inline mt-3">
+                            <input class="form-check-input" type="checkbox" id="sms" value="option1">
+                            <label class="form-check-label" for="sms">SMS</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="whatsapp" value="option2">
+                            <label class="form-check-label" for="whatsapp">WhatsApp</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="email" value="option3">
+                            <label class="form-check-label" for="email">Email</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="mtd" class="col-form-label">MTD</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="mtd" class="form-control" id="mtd">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="ach" class="col-form-label">ACH</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="ach" class="form-control" id="ach">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="golm" class="col-form-label">GOLM</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="golm" class="form-control" id="golm">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="doctor" class="col-form-label">Doctor</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="doctor" class="form-control" id="doctor">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="institution" class="col-form-label">Institution</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="institution" class="form-control" id="institution">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="retail" class="col-form-label">Retail</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="retail" class="form-control" id="retail">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="wholesale" class="col-form-label">Wholesale</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="wholesale" class="form-control" id="wholesale">
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <label for="sale_value" class="col-form-label">Over All Sale Value</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="sale_value" class="form-control" id="sale_value">
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <label for="alert_name" class="col-form-label">Alert Name</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="alert_name" class="form-control" id="alert_name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Save Alert</h2>
+                <ul>
+                    <li>Sale Target Achieve</li>
+                    <li>MTD Target</li>
+                    <li>Wholesale Alert</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5">
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-dark">Save Alert</button>
+                <button type="button" class="btn btn-dark">Clear</button>
+            </div>
+
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-dark">Apply Alert</button>
+                <button type="button" class="btn btn-dark">Edit Alert</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery-3.6.4.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

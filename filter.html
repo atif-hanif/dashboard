@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Filter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Create New Filter</h2>
+                <div class="row align-items-center mt-4">
+                    <div class="col-3">
+                        <label for="business_unit" class="col-form-label">Business Unit</label>
+                    </div>
+                    <div class="col-9">
+                        <select for="business_unit" class="form-select business_unit" multiple>
+                            <option>Select</option>
+                            <option>Alpha</option>
+                            <option>Marvel</option>
+                            <option>Max</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-4">
+                    <div class="col-3">
+                        <label for="zone" class="col-form-label">Zone</label>
+                    </div>
+                    <div class="col-9">
+                        <select for="zone" class="form-select zone" multiple>
+                            <option>Select</option>
+                            <option>Lahore</option>
+                            <option>Peshawar</option>
+                            <option>Karachi</option>
+                            <option>Quetta</option>
+                            <option>Sialkot</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-4">
+                    <div class="col-3">
+                        <label for="segments" class="col-form-label">Segments</label>
+                    </div>
+                    <div class="col-9">
+                        <select for="segments" class="form-select segments" multiple>
+                            <option>Select</option>
+                            <option>Wholesale</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="">
+                            <label class="form-check-label" for="check1">Target vs Actual Calls (MTD)</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="">
+                            <label class="form-check-label" for="check2">Product Wise Sale Value</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check3" name="option3" value="">
+                            <label class="form-check-label" for="check3">Doctor Coverage</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check4" name="option4" value="">
+                            <label class="form-check-label" for="check4">Day Wise Trend by Value</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check5" name="option5" value="">
+                            <label class="form-check-label" for="check5">Monthly Trend by Value</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check6" name="option6" value="">
+                            <label class="form-check-label" for="check6">Region (Distributor) Trend by Value</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                            <label class="form-check-label" for="check7">Team Trend by Value</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                            <label class="form-check-label" for="check7">Current Date</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                            <label class="form-check-label" for="check7">Weekly</label>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="check7" name="option7" value="">
+                            <label class="form-check-label" for="check7">Montly</label>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="col-4">
+                                <label for="date_start" class="col-form-label">Date Start</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="date" name="date_start" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="col-4">
+                                <label for="date_end" class="col-form-label">Date End</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="date" name="date_end" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-4">
+                    <div class="col-4">
+                        <label for="filter_name" class="col-form-label">Filter Name</label>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="filter_name" class="form-control" id="filter_name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Save Filter</h2>
+                <ul>
+                    <li>Day Wise Sale</li>
+                    <li>Month Wise Sale</li>
+                    <li>Week Wise Sale</li>
+                    <li>Morning Evening Dashboard</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5">
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-dark">View</button>
+                <button type="button" class="btn btn-dark">Save Filter</button>
+                <button type="button" class="btn btn-dark">Clear</button>
+            </div>
+
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-dark">Open New Tab</button>
+                <button type="button" class="btn btn-dark">Edit Filter</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery-3.6.4.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="js/filter.js"></script>
+</body>
+</html>
