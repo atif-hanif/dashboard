@@ -7,6 +7,324 @@
 // let hoursMin = hour + ':' + minutes;
 // document.getElementById("time").innerHTML = hoursMin;
 
+$(document).ready(function(){
+    $('.menu-tab').click(function(){
+        $('.menu-hide').toggleClass('show');
+        $('.menu-tab').toggleClass('active');
+    });
+    $('a').click(function(){
+        $('.menu-hide').removeClass('show');
+        $('.menu-tab').removeClass('active');
+    });
+});
+
+const colorPicker = document.querySelectorAll("input.form-control-color");
+
+    const colorUpdate = (cssVars) => {
+        const root = document.querySelector(":root");
+        const keys = Object.keys(cssVars);
+        keys.forEach((key) => {
+            root.style.setProperty(key, cssVars[key]);
+        });
+    };
+
+    colorPicker.forEach((item) => {
+        item.addEventListener("input", (e) => {
+            const cssPropName = `--primary-${e.target.getAttribute("data-id")}`;
+            console.log(cssPropName);
+            colorUpdate({
+            [cssPropName]: e.target.value
+        });
+    });
+});
+
+var color1 = document.querySelector(".color1");
+var color2 = document.querySelector(".color2");
+var color3 = document.querySelector(".color3");
+var color4 = document.querySelector(".color4");
+var color5 = document.querySelector(".color5");
+var color6 = document.querySelector(".color6");
+var color7 = document.querySelector(".color7");
+var color8 = document.querySelector(".color8");
+var color9 = document.querySelector(".color9");
+var color10 = document.querySelector(".color10");
+var color11 = document.querySelector(".color11");
+var color12 = document.querySelector(".color12");
+var color13 = document.querySelector(".color13");
+var color14 = document.querySelector(".color14");
+var color15 = document.querySelector(".color15");
+var color16 = document.querySelector(".color16");
+var headingdiv = document.getElementsByClassName("heading-div");
+var bggardient1 = document.getElementsByClassName("bg-gradient-1");
+var bggardient2 = document.getElementsByClassName("bg-gradient-2");
+var bggardient3 = document.getElementsByClassName("bg-gradient-3");
+var cardheader = document.getElementsByClassName("card-header");
+var filter = document.getElementsByClassName("filter");
+var filtername = document.getElementsByClassName("filtername");
+var setalert = document.getElementsByClassName("set-alert")
+var linearDirection1 = document.getElementsByName("toDirection1")[0];
+var linearDirection2 = document.getElementsByName("toDirection2")[0];
+var linearDirection3 = document.getElementsByName("toDirection3")[0];
+var linearDirection4 = document.getElementsByName("toDirection4")[0];
+var linearDirection5 = document.getElementsByName("toDirection5")[0];
+var linearDirection6 = document.getElementsByName("toDirection6")[0];
+var linearDirection7 = document.getElementsByName("toDirection7")[0];
+var linearDirection8 = document.getElementsByName("toDirection8")[0];
+
+function returnColor(){
+
+    headingdiv[0].style.background =
+    "linear-gradient("
+    + linearDirection1.value
+    + ", "
+    + color1.value
+    + ","
+    + color2.value
+    + ")";
+
+    headingdiv[1].style.background =
+    "linear-gradient("
+    + linearDirection1.value
+    + ", "
+    + color1.value
+    + ","
+    + color2.value
+    + ")";
+
+    bggardient1[0].style.background =
+    "linear-gradient("
+    + linearDirection2.value
+    + ", "
+    + color3.value
+    + ","
+    + color4.value
+    + ")";
+
+    bggardient1[1].style.background =
+    "linear-gradient("
+    + linearDirection2.value
+    + ", "
+    + color3.value
+    + ","
+    + color4.value
+    + ")";
+
+    bggardient1[2].style.background =
+    "linear-gradient("
+    + linearDirection2.value
+    + ", "
+    + color3.value
+    + ","
+    + color4.value
+    + ")";
+
+    bggardient2[0].style.background =
+    "linear-gradient("
+    + linearDirection3.value
+    + ", "
+    + color5.value
+    + ","
+    + color6.value
+    + ")";
+
+    bggardient2[1].style.background =
+    "linear-gradient("
+    + linearDirection3.value
+    + ", "
+    + color5.value
+    + ","
+    + color6.value
+    + ")";
+
+    bggardient2[2].style.background =
+    "linear-gradient("
+    + linearDirection3.value
+    + ", "
+    + color5.value
+    + ","
+    + color6.value
+    + ")";
+
+    bggardient3[0].style.background =
+    "linear-gradient("
+    + linearDirection4.value
+    + ", "
+    + color7.value
+    + ","
+    + color8.value
+    + ")";
+
+    bggardient3[1].style.background =
+    "linear-gradient("
+    + linearDirection4.value
+    + ", "
+    + color7.value
+    + ","
+    + color8.value
+    + ")";
+
+    bggardient3[2].style.background =
+    "linear-gradient("
+    + linearDirection4.value
+    + ", "
+    + color7.value
+    + ","
+    + color8.value
+    + ")";
+
+    cardheader[0].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[1].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[2].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[3].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[4].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[5].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[6].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[7].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    cardheader[8].style.background =
+    "linear-gradient("
+    + linearDirection5.value
+    + ", "
+    + color9.value
+    + ","
+    + color10.value
+    + ")";
+
+    filter[0].style.background =
+    "linear-gradient("
+    + linearDirection6.value
+    + ", "
+    + color11.value
+    + ","
+    + color12.value
+    + ")";
+
+    filtername[0].style.background =
+    "linear-gradient("
+    + linearDirection7.value
+    + ", "
+    + color13.value
+    + ","
+    + color14.value
+    + ")";
+
+    filtername[1].style.background =
+    "linear-gradient("
+    + linearDirection7.value
+    + ", "
+    + color13.value
+    + ","
+    + color14.value
+    + ")";
+
+    setalert[0].style.background =
+    "linear-gradient("
+    + linearDirection8.value
+    + ", "
+    + color15.value
+    + ","
+    + color16.value
+    + ")";
+
+    setalert[1].style.background =
+    "linear-gradient("
+    + linearDirection8.value
+    + ", "
+    + color15.value
+    + ","
+    + color16.value
+    + ")";
+}
+
+
+document.querySelector('select[name="toDirection1"]').onchange=returnColor;
+document.querySelector('select[name="toDirection2"]').onchange=returnColor;
+document.querySelector('select[name="toDirection3"]').onchange=returnColor;
+document.querySelector('select[name="toDirection4"]').onchange=returnColor;
+document.querySelector('select[name="toDirection5"]').onchange=returnColor;
+document.querySelector('select[name="toDirection6"]').onchange=returnColor;
+document.querySelector('select[name="toDirection7"]').onchange=returnColor;
+document.querySelector('select[name="toDirection8"]').onchange=returnColor;
+color1.addEventListener("input", returnColor)
+color2.addEventListener("input", returnColor)
+color3.addEventListener("input", returnColor)
+color4.addEventListener("input", returnColor)
+color5.addEventListener("input", returnColor)
+color6.addEventListener("input", returnColor)
+color7.addEventListener("input", returnColor)
+color8.addEventListener("input", returnColor)
+color9.addEventListener("input", returnColor)
+color10.addEventListener("input", returnColor)
+color11.addEventListener("input", returnColor)
+color12.addEventListener("input", returnColor)
+color13.addEventListener("input", returnColor)
+color14.addEventListener("input", returnColor)
+color15.addEventListener("input", returnColor)
+color16.addEventListener("input", returnColor)
+
 //Segments Sale
 
 Highcharts.chart('chart1', {
